@@ -49,7 +49,7 @@
                     
                     <div class="collapse navbar-collapse" id="navcollapse">
                       <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a  href="#"> <i class="fa fa-home"> Home</i></a></li>
+                        <li class="active"><a class="nav-link js-scroll-trigger"  href="#home"> <i class="fa fa-home"> Home</i></a></li>
                         <li><a class="nav-link js-scroll-trigger" href="#about"> <i class="fa fa-users"> About Us</i></a></li>
                         <li><a class="nav-link js-scroll-trigger" href="#gallery"><i class="fa fa-camera"> Gallery</i></a></li>
                         <li><a class="nav-link js-scroll-trigger" href="#contact"><i class="fa fa-envelope"> Contact Us</i></a></li>
@@ -60,6 +60,7 @@
                   </div>
                 </nav>
                 <!--End of Nav Section-->
+                <section class="page-section bg-success" id="home">
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-md-3 ">
@@ -226,6 +227,7 @@
                     </div>
                   </div>
                 </div>
+                </section>
                 <!--About Us-->
                 <section class="page-section bg-success" id="about">
                   <div class="container">
@@ -250,16 +252,37 @@
           <div class="container">
             <div class="contact">
               <h2 class="text-center">Contact us today!</h2>
-             <form action="" method="" class="form">
-              <label id="name">Name</label>
-              <input id="txtname" type="text" placeholder="Enter your name"><br><br>
-              <label id="email">Email</label>
-              <input id="txtemail" type="text" placeholder="Enter your email"><br><br>
-              <button type="submit">Submit</button>
-             </form>
-          </div>
+             <form  onsubmit="" action="" method="">
+               <fieldset>
+                 
+                <label for="txtname">Name</label><!--for attribute ties the label to the textboxt-->
+                <input  type="text" id="txtname" placeholder="Enter your name"><br><br>
+                <label for="txtemail">Email</label>
+                <input type="text" id="txtemail"  placeholder="Enter your email"><br><br>
+                <textarea rows="10" cols="40" placeholder ="Enter your Message here"></textarea><br>
+                <button type="submit">Submit</button>
+               </form>
+               </fieldset>
+              
+           </div>
           </div>
         </section>
+        <footer>
+         <p class="text-center"> &copy;Rangau Succulents.</p>
+          <ul>
+            <li><a class="nav-link js-scroll-trigger" href="#home"><i class="fa fa-home"> Home</i></a></li></li>
+            <li><a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-users"> About</i></a></li></li>
+            <li><a class="nav-link js-scroll-trigger" href="#gallery"><i class="fa fa-camera"> Gallery</i></a></li></li>
+            <li><a class="nav-link js-scroll-trigger" href="#contact"><i class="fa fa-envelope"> Contact</i></a></li>
+          </ul>
+          <p class="text-white">
+            <a href=""> <i class="fa fa-facebook"> Facebook</i>
+            <a href=""> <i class="fa fa-instagram"> Instagram</i> </a>
+
+            </p>
+           
+          
+        </footer>
             
         
     

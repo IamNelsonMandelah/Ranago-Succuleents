@@ -87,8 +87,43 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
 
 }
-.contact{
+#contact{
     color:slategrey;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:turquoise;
+    background-color:#fffff0;
+    
+}
+footer{
+    background-color: green;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 80px;
+}
+footer ul{
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+}
+footer ul li{
+    list-style: none;
+    display: inline;
+    margin: 6px;
+    padding:2px;
+}
+footer ul li a{
+    color:whitesmoke;
+    font-weight: bold;
+    
+}
+footer ul li a:hover{
+    color:whitesmoke;
+    background-color: black;
+}
+ a{
+    color:white;
+
+}
+ a:hover{
+    color:whitesmoke;
+    background-color: black;
 }
