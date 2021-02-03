@@ -1,0 +1,94 @@
+body{
+   /* background-image: url(Images/Fulls/4.jpg);*/
+    margin: 0px;
+    background-color: honeydew;
+}
+/*Start Nav Section*/
+.header{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 0px;
+    background-color: green;
+    text-align: center;
+    text-shadow: 3px 3px  #000000;
+    color:whitesmoke;
+    font-weight: bold;
+    
+}
+.navbar-light{
+    background-color: green;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 18px;
+}
+ .navbar-nav{
+   padding:0px;
+    margin:4px
+}
+.navbar-nav li{
+    margin-right:2px;
+    margin-left:2px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.navbar-nav li a{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.navbar-nav li a:hover{
+    color:blue;
+    position:relative;
+    top:1px;
+    bottom:1px;
+    
+}
+.icon-bar{
+    color:whitesmoke;
+}
+#logo{
+    position:absolute;
+    top:0px;
+    left:5px;
+    width: 80px;
+    max-height: 50px;
+}
+/*End of Nav Section*/
+/*Slider*/
+.carousel{
+    width: 850px;
+    margin:auto;
+}
+.caption{
+    color: slategrey;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    color:slategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+#about{
+color:brown;
+background-color: tan;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutus{
+    text-align: center;
+}
+.ourservices{
+    text-align: center;
+    list-style: none;
+
+}
+.contact{
+    color:slategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:turquoise;
+}
