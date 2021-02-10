@@ -160,7 +160,8 @@
                     <div class="col-md-2  col-xs-3">
                       <div class="thumbnail">
                         <a href="Images/Thumbs/1.jpg">
-                          <img class="rounded" src="Images/Thumbs/1.jpg" alt="Succulents">
+                          <img  style="opacity:0.3;" class="myImages" onmouseover="fadeIn()", onmouseout="fadeOut()"
+                           src="Images/Thumbs/1.jpg" alt="Succulents">
                         </a>
                       </div>
                         <div class="caption">Do you want to wake up to this view evey morning?<br>
@@ -172,7 +173,8 @@
                     <div class="col-md-2  col-xs-3">
                       <div class="thumbnail">
                         <a href="Images/Thumbs/2.jpg">
-                          <img class="rounded" src="Images/Thumbs/2.jpg" alt="Succulents" height="250px">
+                          <img style="opacity:0.3;" class="myImages" onmouseover="fadeIn()", onmouseout="fadeOut()"
+                          src="Images/Thumbs/2.jpg" alt="Succulents" >
                         </a>
                       </div>
                         <div class="caption">Are you a Company or and Individual who owns a recreational Park?<br>
@@ -184,7 +186,8 @@
                     <div class="col-md-2  col-xs-3">
                       <div class="thumbnail">
                         <a href="Images/Thumbs/3.jpg">
-                          <img class="rounded" src="Images/Thumbs/3.jpg" alt="Succulents" height="250px">
+                          <img style="opacity:0.3;" class="myImages" onmouseover="fadeIn()", onmouseout="fadeOut()"
+                           src="Images/Thumbs/3.jpg" alt="Succulents" >
                         </a>
                       </div>
                         <div class="caption">And yes, that small space outside your house can become something
@@ -195,7 +198,8 @@
                     <div class="col-md-2  col-xs-3">
                       <div class="thumbnail">
                         <a href="Images/Thumbs/4.jpg">
-                          <img class="rounded" src="Images/Thumbs/4.jpg" alt="Succulents" height="250px">
+                          <img style="opacity:0.3;" class="myImages" onmouseover="fadeIn()", onmouseout="fadeOut()"
+                           src="Images/Thumbs/4.jpg" alt="Succulents" >
                         </a>
                       </div>
                         <div class="caption">We have an array of succulents plants as well as other plant seedlings,
@@ -207,7 +211,8 @@
                     <div class="col-md-2  col-xs-3 visible-md visible-lg">
                       <div class="thumbnail">
                         <a href="Images/Thumbs/5.jpg">
-                          <img class="rounded" src="Images/Thumbs/5.jpg" alt="Succulents" max-height="100px">
+                          <img style="opacity:0.3;" class="myImages" onmouseover="fadeIn()", onmouseout="fadeOut()"
+                           src="Images/Thumbs/5.jpg" alt="Succulents" max-height="100px">
                         </a>
                       </div>
                         <div class="caption">Make you backyard a breath taking site.<br>We'll maintain it for you.
@@ -217,7 +222,8 @@
                     <div class="col-md-2  col-xs-3 visible-md visible-lg">
                       <div class="thumbnail">
                         <a href="Images/Thumbs/6.jpg">
-                          <img class="rounded" src="Images/Thumbs/6.jpg" alt="Succulents" max-height="100px">
+                          <img style="opacity:0.3;" class="myImages"
+                          onmouseover="fadeIn()", onmouseout="fadeOut()" src="Images/Thumbs/6.jpg" alt="Succulents" max-height="100px">
                         </a>
                       </div>
                         <div class="caption">Are you planning a  social outdoor activity?Look no further!<br>
@@ -226,9 +232,11 @@
                         </div>
                     </div>
                   </div>
+                  <a class="btn btn-success btn-xl js-scroll-trigger" href="#gallery">See More?</a> 
                 </div>
                 </section>
                 <!--About Us-->
+               
                 <section class="page-section bg-success" id="about">
                   <div class="container">
                     <h2 class="aboutus">About Us</h2>
@@ -247,22 +255,43 @@
                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Talk to Us?</a> 
                   </div>
                 </section>
+                <section class="page-section bg-success" id="gallery">
+                <div class="container">
+                  <h2 class="aboutus">Gallery</h2>
+                  <hr class="divider light my-4" />
+                  <div class="gallery">
+                  
+                    <img class="" onmouseover="" onmouseout="" src="" alt="">
+                    <img class="" onmouseover="" src="" alt="">
+                    <img class="" onmouseover="" src="" alt="">
+                    <img class="" onmouseover="" src="" alt="">
+                    <img class="" onmouseover="" src="" alt="">
+                    <img class="" onmouseover="" src="" alt="">
+                  </div>
+                </div>
+              </section>
                  <!-- Contact-->
         <section class="page-section" id="contact">
           <div class="container">
             <div class="contact">
               <h2 class="text-center">Contact us today!</h2>
-             <form  onsubmit="" action="" method="">
+             <form  onsubmit="return validate(), validateName(), validateTextArea()" name="form1" action="#">
                <fieldset>
-                 
+                 <!--Name-->
                 <label for="txtname">Name</label><!--for attribute ties the label to the textboxt-->
-                <input  type="text" id="txtname" placeholder="Enter your name"><br><br>
-                <label for="txtemail">Email</label>
-                <input type="text" id="txtemail"  placeholder="Enter your email"><br><br>
-                <textarea rows="10" cols="40" placeholder ="Enter your Message here"></textarea><br>
+                <input  type="text" id="txtname" placeholder="Enter your name" >
+                <label id="username" style="color:red; visibility:hidden">Invalid</label><br><br>
+                <!--Email-->
+                <label  for="txtemail">Email</label>
+                <Input Id="txt1" input type='text' name='text1' placeholder="Enter Email" name="">
+                  <label Id="lbl1" style="color:red;visibility:hidden;"></label><br><br>
+                <!--Text area-->
+                <textarea id="texthere"rows="10" cols="40" placeholder ="Enter your Message here"></textarea>
+                <label id="textarea"style="visibility:hidden">This field cannot be blank</label><br>
                 <button type="submit">Submit</button>
+              </fieldset>
                </form>
-               </fieldset>
+               
               
            </div>
           </div>
@@ -275,7 +304,7 @@
             <li><a class="nav-link js-scroll-trigger" href="#gallery"><i class="fa fa-camera"> Gallery</i></a></li></li>
             <li><a class="nav-link js-scroll-trigger" href="#contact"><i class="fa fa-envelope"> Contact</i></a></li>
           </ul>
-          <p class="text-white">
+          <p class="icons">
             <a href=""> <i class="fa fa-facebook"> Facebook</i>
             <a href=""> <i class="fa fa-instagram"> Instagram</i> </a>
 
@@ -291,5 +320,6 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="Rangao.js"></script>
       </body>
     </html>
