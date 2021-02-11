@@ -25,6 +25,10 @@
         <![endif]-->
         <!--Font-awesome-->
         <script src="https://use.fontawesome.com/38f822cb08.js"></script>
+        <!--JQUERY UI CSS CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"  />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css" />
       </head>
       <body>
        
@@ -66,7 +70,7 @@
                     <div class="col-md-3 ">
                       <div class="main">
                         <h1>
-                          Hello  and Welcome to Rangau Succulents.
+                          Hello  and Welcome to Rangao Succulents.
                         </h1>
                         <hr class="divider my-4" />           
                         <p>
@@ -98,7 +102,7 @@
                     <div class="item active">
                       <img src="Images/Fulls/5.jpg" alt="Chania">
                       <div class="carousel-caption">
-                        <h3 class="text-black mt-2">Rangau Succulents</h3>
+                        <h3 class="text-black mt-2">Rangao Succulents</h3>
                         <p >Gardening has never been this fun</p>
                       </div>
                     </div>
@@ -224,6 +228,7 @@
                         <a href="Images/Thumbs/6.jpg">
                           <img style="opacity:0.3;" class="myImages"
                           onmouseover="fadeIn()", onmouseout="fadeOut()" src="Images/Thumbs/6.jpg" alt="Succulents" max-height="100px">
+                       
                         </a>
                       </div>
                         <div class="caption">Are you planning a  social outdoor activity?Look no further!<br>
@@ -241,7 +246,7 @@
                   <div class="container">
                     <h2 class="aboutus">About Us</h2>
                     <hr class="divider light my-4" />
-                    <p>Located in Rangau along Oletepes-Isinya road, Kajiado county, we are a team dedicated to Environmental health and Beauty
+                    <p>Located in Rangau along Oletepes-Isinya road, Kajiado county, we are a team dedicated to Environmental health and Beauty.
                        We offer an array of services including:</p>
                        <ul class="ourservices">
                         <li>Grass cutting</li> 
@@ -255,19 +260,25 @@
                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Talk to Us?</a> 
                   </div>
                 </section>
+                <!--Gallery-->
                 <section class="page-section bg-success" id="gallery">
                 <div class="container">
                   <h2 class="aboutus">Gallery</h2>
                   <hr class="divider light my-4" />
                   <div class="gallery">
                   
-                    <img class="" onmouseover="" onmouseout="" src="" alt="">
-                    <img class="" onmouseover="" src="" alt="">
-                    <img class="" onmouseover="" src="" alt="">
-                    <img class="" onmouseover="" src="" alt="">
-                    <img class="" onmouseover="" src="" alt="">
-                    <img class="" onmouseover="" src="" alt="">
+                    <img  id="G8"  title="Hedge Trimming" src="Images/Fulls/G8.jpeg" alt="" height="400">
+                    <img  id="G7"  title="Prunning/Weeding"  src="Images/Fulls/G7.jpeg" alt="" height="400">
+                    <img  id="G9"  title="Grass Rolling"   src="Images/Fulls/G9.jpeg" alt="" height="400">
+                    <img id="G11"  title=" Our Plant expert Attending to Young Plants inthe Nursery"  src="Images/Fulls/G11.jpeg" alt="" height="400">
+                    <img id="G2"  title=" water is Important for growth"  src="Images/Fulls/G2.jpeg" alt="" height="400">
+                    <img id="G6"  title="Transplanting"  src="Images/Fulls/G6.jpeg" alt="" height="400">
+                    <img id="G3"  title="Our  Client is Happy & Satisfied at Home"  src="Images/Fulls/G3.jpeg" alt="" height="400">
+                    <img id="G1"  title="Go Green even in your Living room"  src="Images/Fulls/G1.jpeg" alt="" height="400">
+                    <img id="G10"  title="Your Study wont be Complete Without These!!" src="Images/Fulls/G10.jpeg" alt=""height="400">
+                    <img id="G4"  title="Beautiful Interior Decor"  src="Images/Fulls/G4.jpeg" alt="" height="400">
                   </div>
+                  <a class="btn btn-success btn-xl js-scroll-trigger" href="#home">Home</a>
                 </div>
               </section>
                  <!-- Contact-->
@@ -315,11 +326,18 @@
             
         
     
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <!--JQUERY -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <!--JQuery UI-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous"></script>-->
         <script src="Rangao.js"></script>
+        
       </body>
     </html>

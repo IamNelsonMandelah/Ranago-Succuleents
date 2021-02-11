@@ -110,3 +110,11 @@ function hide()
         clearInterval(intervalID)
     }
 }
+/**Gallery Animation */
+$(".gallery").tooltip({
+
+track:"true",
+/*show:{effect:"bounce",duration:"3000"},
+hide:{effect:"explode",duration:"3000"}*/
+
+})
